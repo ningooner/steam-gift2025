@@ -14,7 +14,7 @@ export async function redeemGift(formData: FormData) {
   try {
     await resend.emails.send({
       from: 'onboarding@resend.dev', // Default testing sender
-      to: 'privat@ningunosound.com', // <--- CHANGE THIS TO YOUR EMAIL
+      to: 'onlineshop@ningunosound.com', // <--- CHANGE THIS TO YOUR EMAIL
       subject: '🎁 New Steam Gift Redemption!',
       text: `Prepare the gift! The user "${username}" has requested a redemption.`,
     });
@@ -26,4 +26,4 @@ export async function redeemGift(formData: FormData) {
     console.error('Failed to send email:', error);
     return { success: false };
   }
-}
+}4
